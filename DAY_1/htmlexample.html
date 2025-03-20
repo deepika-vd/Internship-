@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Tags Example</title>
+    <link rel="stylesheet" href="style.css">
+   <!-- <style>
+        h2 {
+color: aqua;
+text-align: center;
+        }
+    </style> --->
+    <style>
+        table{
+            border: 1px solid black;   
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px solid black; 
+        }
+    </style>
+
+    
+</head>
+<body>
+    <h1 style="color:red ; text-align:center;">HTML Tags Example</h1> <!--stying formating tag using css 1-->
+
+    <!-- Formatting Tags -->
+    <h2>Text Formatting</h2>
+    <p>This is <b>bold</b>, <i>italic</i>, and <u>underlined</u> text.</p>
+    <p><mark>Highlighted text</mark> with <sup>superscript</sup> and <sub>subscript</sub>.</p>
+    <p><del>Deleted text</del> and <ins>Inserted text</ins>.</p>
+
+    <!-- Table Example -->
+    <h2>Student Information Table</h2>
+    <table border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>20</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>22</td>
+            <td>B</td>
+        </tr>
+    </table>
+
+    <!-- Form Example -->
+    <h2>Contact Form</h2>
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female<br><br>
+
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" name="hobbies" value="sports"> Sports
+        <input type="checkbox" name="hobbies" value="reading"> Reading<br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Image Example -->
+    <h2>Sample Image</h2>
+    <img src="Screenshot (72).png" alt="Sample Image" width="300" height="200">
+
+    <!-- Anchor Tag Example -->
+    <h2>Useful Links</h2>
+    <a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
+</body>
+</html>
