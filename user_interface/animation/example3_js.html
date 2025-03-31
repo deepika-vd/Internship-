@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animate</title>
+    <style>
+        @keyframes move {
+            0% {
+                left: 0%;
+            }
+            50% {
+                left: 50%;
+            }
+            100% {
+                left: 0%;
+            }
+        }
+
+        h1 {
+            position: relative;
+            animation-name: move;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-play-state: paused; /* Initially paused */
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const h1 = document.querySelector('h1');
+            const button = document.querySelector('button');
+
+            button.onclick = () => {
+                // Restart the animation
+                h1.style.animation = 'none'; // Remove animation
+                void h1.offsetWidth; // Trigger reflow (forces browser to recognize change)
+                h1.style.animation = 'move 2s forwards'; // Reapply animation
+            };
+        });
+    </script>
+</head>
+<body>
+
+    <h1>Welcome!</h1>
+    <button>Restart Animation</button> <!-- Button to restart animation -->
+
+</body>
+</html>
